@@ -1,4 +1,4 @@
-# rmit-idad-project-boilerplate
+# Interface Design and Development Project Boilerplate
 This is a boilerplate specifically designed for use in RMIT Digital Media's Interface Design and Development course. It contains a GitHub action workflow especially designed to assist in publishing multiple branches along with their commit histories. Upon forking this repo into your own profile, the gh-pages branch should chosen as the deployment source for GitHub pages. The published link will lead to a page indexing live versions of every current branch along with their commit history.
 
 ## Setting up your own project
@@ -14,10 +14,10 @@ This is a boilerplate specifically designed for use in RMIT Digital Media's Inte
 4. Click "New repository secret" button.
 5. ***VERY IMPORTANT*** make sure you name this secret exactly: GIT_TOKEN
 6. Now switch to the second tab and follow the steps at (with the notes below): https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
-7. Make sure to name it something relevant such as idad-auto-publish
-8. Make sure the expiration is set to custom and select 28th of June
+7. Make sure to name it something relevant such as "idad-auto-publish".
+8. Make sure the expiration is set to custom and select 28th of June.
 9. Under Repository Access choose "Only select repositories" and then choose the repo you just forked.
-10. Under Permissions click the "Add permissions" button, then check the "Contents" permissions.
+10. Under Permissions click the "Add permissions" button, then check the "Contents" permissions, and set access to "Read and write".
 11. Click Generate token, double-check the details then click Generate token in the modal pop up.
 12. Copy the generated token, then paste it into the "Secret" section back in the first tab, then click "Add secret"
 13. Each token is unique, and only shown to you once, but you can generate multiple secrets, so if something goes wrong, delete the token and secret and do this process again from the start.
