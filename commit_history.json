@@ -1,2 +1,10 @@
 [
+{
+  "commit": "8436c3500f36e57b788f8b858b00b7772f259d6b",
+  "subject": "Set CHANGES_MADE to true in workflow",
+  "body": "",
+  "name": "Patrick McMahon",
+  "date": "Thu, 5 Nov 2026 15:01:02 +1100",
+  "diffs": "5 files changed, 782 insertions(+)"
+}
 ]
