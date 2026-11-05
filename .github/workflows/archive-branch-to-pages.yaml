@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # were changes actually made to the repo since last commit
-      CHANGES_MADE: false
+      CHANGES_MADE: true
     steps:
       # checkout repo into runner
       - uses: actions/checkout@v6
