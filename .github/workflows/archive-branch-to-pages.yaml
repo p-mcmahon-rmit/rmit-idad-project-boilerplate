@@ -44,7 +44,7 @@ jobs:
               fi
       # add and commit files to the repo : from https://build5nines.com/github-actions-commit-and-push-changes-back-to-repository/
       # Commit and Push Changes
-      - run: echo "${{ env.CHANGES_MADE }} 
+      - run: echo "${{ env.CHANGES_MADE }}"
       - name: Commit and Push Changes
         if: ${{ env.CHANGES_MADE == 'true' }}      
         run: |
