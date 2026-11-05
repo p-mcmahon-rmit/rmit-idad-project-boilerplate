@@ -3,11 +3,13 @@ This is a boilerplate specifically designed for use in RMIT Digital Media's Inte
 
 ## Setting up your own project
 ### Forking
+To start with we want to create a copy of this project boilerplate under our own name. We can do so by forking it, which means creating a copy that is linked back to the original.
 1. Make sure you have your own GitHub account and are signed in on this browser.
 2. Click the Fork button. Make sure you're the owner and choose a new repository name.
 3. ***VERY IMPORTANT*** make sure to uncheck the "Copy the main branch only" option.
 4. Click the Create fork button.
 ### Creating Access Token
+Because this repo contains automated actions changing its own contents we need to set up permissions to allow it to modify itself.
 1. This process is best completed by opening your GitHub profile in two tabs at once.
 2. In the first tab navigate to your forked repo, and then click settings in the upper bar.
 3. Select "Secrets and variables" from the bar on the left (it's in Security and quality subsection), then click "Actions".
@@ -22,6 +24,13 @@ This is a boilerplate specifically designed for use in RMIT Digital Media's Inte
 12. Copy the generated token, then paste it into the "Secret" section back in the first tab, then click "Add secret"
 13. Each token is unique, and only shown to you once, but you can generate multiple secrets, so if something goes wrong, delete the token and secret and do this process again from the start.
 ### Setting up pages and branching
+Now that we've forked and set up permissions, we need to do one final step so we can see our work at a live URL.
+1. Visit the repo page in the browser while you're logged in.
+2. Click "Settings" in the top bar (you want the project not profile settings), then select "Pages" from the bar on the left.
+3. Under "Build and deployment" make sure "Deploy from a branch" is selected in source, then select "gh-pages" under "Branch", then hit save.
+4. It might take 30 seconds, but if you wait a little, then refresh the page you can see the URL at the top.
+5. Visit the link - it always pays to double-check anything we publish is actually working.
+6. We will cover branching in class, but whenever you want to create additional branches, never branch off of "gh-pages". You shouldn't need to touch the contents of this branch, it will just do the automated publishing.
 
 ## How this works
 Whenever code is pushed to any branch (except gh-pages) it is copied over into the gh-pages branch, inside of a folder automatically named after its source. Currently only the main branch exists, so if you look at the gh-pages branch, it will contain a folder called "main" which contains all the code from the main branch. Any new branches should be created based on main, which will likewise update within the gh-pages branch with subsequent pushes.
