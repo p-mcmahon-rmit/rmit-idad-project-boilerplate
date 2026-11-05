@@ -38,4 +38,3 @@ Whenever code is pushed to any branch (except gh-pages) it is copied over into t
 ---
 
 This workflow is contained in the file located at .github/workflows/archive-branch-toPages.yml - please view for a more detail breakdown of this process.
-But will it now compile properly?
