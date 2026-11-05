@@ -1,0 +1,1 @@
+- work out git changes check : currently hard set to true
