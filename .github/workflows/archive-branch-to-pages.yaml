@@ -39,6 +39,7 @@ jobs:
                 echo "Changes detected."
                 echo "{CHANGES_MADE}={true}" >> "GITHUB_ENV"
               else
+                echo "$(git diff --exit-code)"
                 echo "No changes."
               fi
       # add and commit files to the repo : from https://build5nines.com/github-actions-commit-and-push-changes-back-to-repository/
